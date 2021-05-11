@@ -3,5 +3,4 @@ let PageComm = {
 }
 
 let pageObject = {
-
 }

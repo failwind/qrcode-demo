@@ -5,4 +5,7 @@ let pageComponet = {
       $("#wrapper").toggleClass("toggled");
     });
   },
+  topBarInit() {
+
+  }
 };

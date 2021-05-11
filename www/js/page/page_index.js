@@ -1,5 +1,7 @@
 let PageIndex = {};
 
+// pageObject.vue = vueCommon;
+
 var vm = new Vue({
   el: "#container_app",
   data: pageObject,
@@ -9,6 +11,9 @@ var vm = new Vue({
    */
   created() {
     console.log("vm created !!");
+    console.log("pageObject:", pageObject);
+    // if(!pageObject.vue) pageObject.vue = vueCommon;
+    // console.log('pageObject.vue.enableSiderBar:', pageObject.vue.enableSiderBar);
   },
   /**
    * when component render
@@ -19,6 +24,7 @@ var vm = new Vue({
       // Code that will run only after the
       // entire view has been re-rendered
       console.log9("vm updated -> nextTick !!");
+      console.log("pageObject:", pageObject);
     });
   },
   mounted: function () {
@@ -27,6 +33,7 @@ var vm = new Vue({
       // Code that will run only after the
       // entire view has been rendered
       console.log('vm mounted -> nextTick !!');
+      console.log("pageObject:", pageObject);
       this.init();
     });
   },

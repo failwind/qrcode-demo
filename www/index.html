@@ -14,34 +14,12 @@
     <body>
         <div id="container_app">
             <div class="d-flex" id="wrapper">
-                <!-- Sidebar-->
+                <!-- SiderBar-->
                 <sider-bar></sider-bar>
                 <!-- Page Content-->
                 <div id="page-content-wrapper">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-                        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#!">
-                                        Home
-                                        <span class="sr-only">(current)</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="#!">Link</a></li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#!" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#!">Action</a>
-                                        <a class="dropdown-item" href="#!">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#!">Something else here</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                    <!-- TopBar -->
+                    <top-bar></top-bar>
                     <div class="container-fluid">
                         <h1 class="mt-4">Simple Sidebar</h1>
                         <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
@@ -69,9 +47,10 @@
         <!-- common js -->
         <script src="js/vue2/vue.min.js"></script>
         <!-- page level js -->
-        <script src="js/page/page_common.js"></script>
+        <script src="js/page/page_vue_common_data.js"></script>
         <script src="js/page/page_vue_component.js"></script>
         <script src="js/page/page_vue_component_init.js"></script>
+        <script src="js/page/page_common.js"></script>
         <!-- page single js -->
         <script src="js/page/page_index.js"></script>
         <!-- ==== END::JAVASCRIPT ==== -->
