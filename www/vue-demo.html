@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> -->
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+  </head>
+  <body>
+    <div>You are shock !!</div>
+
+    <div id="app">
+      <component-layout></component-layout>
+      <sider-bar></sider-bar>
+      <runoob></runoob>
+      <side-bar></side-bar>
+    </div>
+
+    <!-- <script src="js/vue2/vue.min.js"></script> -->
+    <script type="text/javascript">
+      console.log("BEGIN...");
+      Vue.component("component-layout", {
+          template: `<div>123123{{text}}</div>`,
+          data(){
+              return{
+                  text:'我是全域註冊'
+              }
+          }
+      });
+      Vue.component("side-bar2", {
+          template: `
+          <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">Start Bootstrap</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action bg-light" href="#!">Dashboard</a>
+                <a class="list-group-item list-group-item-action bg-light" href="#!">Shortcuts</a>
+                <a class="list-group-item list-group-item-action bg-light" href="#!">Overview</a>
+                <a class="list-group-item list-group-item-action bg-light" href="#!">Events</a>
+                <a class="list-group-item list-group-item-action bg-light" href="#!">Profile</a>
+                <a class="list-group-item list-group-item-action bg-light" href="#!">Status</a>
+            </div>
+        </div>
+          `,
+      });
+      Vue.component("sider-bar", {
+        template: `
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">Start Bootstrap</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action bg-light" href="#!">Dashboard</a>
+                <a class="list-group-item list-group-item-action bg-light" href="#!">Shortcuts</a>
+                <a class="list-group-item list-group-item-action bg-light" href="#!">Overview</a>
+                <a class="list-group-item list-group-item-action bg-light" href="#!">Events</a>
+                <a class="list-group-item list-group-item-action bg-light" href="#!">Profile</a>
+                <a class="list-group-item list-group-item-action bg-light" href="#!">Status</a>
+            </div>
+        </div>
+        `,
+      })
+      Vue.component("runoob", {
+        template: "<h1>自定义组件!</h1>",
+      });
+      // 创建根实例
+      new Vue({
+        el: "#app",
+      });
+      console.log("END...");
+    </script>
+  </body>
+</html>
